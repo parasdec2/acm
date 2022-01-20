@@ -1,0 +1,68 @@
+.contact {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10px;
+}
+
+.contact__heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact__location {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact__location__heading {
+  /* background-color: bisque; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact__location__block {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__location__address__block {
+  flex: 1;
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: right;
+}
+.contact__location__address {
+  /* background-color: bisque; */
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  font-size: larger;
+}
+
+.contact__location__map {
+  flex: 1;
+  filter: hue-rotate(180deg);
+}
+
+.contact__location__map__sm {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .contact {
+    min-height: 100vh;
+  }
+  .contact__location__block {
+    flex-direction: column;
+  }
+
+  .contact__location__map__sm {
+    display: contents;
+  }
+
+  .contact__location__map {
+    display: none;
+  }
+}
